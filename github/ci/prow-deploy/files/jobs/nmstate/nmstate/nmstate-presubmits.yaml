@@ -29,4 +29,4 @@ presubmits:
               - "/usr/local/bin/runner.sh"
               - "/bin/sh"
               - "-c"
-              - "automation/run-tests.sh --test-type integ_tier1 --centos-stream --k8s --artifacts-dir $ARTIFACTS"
+              - "CONTAINER_CMD=docker automation/run-tests.sh --test-type integ_tier1 --centos-stream --k8s --artifacts-dir $ARTIFACTS"
